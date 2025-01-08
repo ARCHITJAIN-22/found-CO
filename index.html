@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoundCo - Connect Innovators</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FoundCo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="founder.html">Founders</a></li>
+          <li class="nav-item"><a class="nav-link" href="developer.html">Developers</a></li>
+        </ul>
+        <div class="d-flex">
+          <!-- <a href="login.html" class="btn btn-outline-primary me-2">Login</a> -->
+          <a href="register.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="landing-header">
+    <div class="container text-center">
+      <h1 class="main-heading">Welcome to <span class="highlight">FoundCo</span></h1>
+      <p class="sub-heading">Where Innovators Meet Builders</p>
+      <div class="action-buttons">
+        <a href="founder.html" class="btn btn-primary btn-lg me-3">I'm a Founder</a>
+        <a href="developer.html" class="btn btn-secondary btn-lg">I'm a Developer</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="landing-main">
+    <div class="container">
+      <div class="row feature-section">
+        <div class="col-md-6">
+          <img src="founder.jpg" alt="Founder" class="img-fluid feature-image">
+        </div>
+        <div class="col-md-6">
+          <h2 class="feature-heading">For Founders</h2>
+          <p class="feature-text">Easily list your startup ideas, attract top developers, and find your co-founder. Share equity and grow your dream project.</p>
+        </div>
+      </div>
+      <div class="row feature-section flex-md-row-reverse">
+        <div class="col-md-6">
+          <img src="developer.jpg" alt="Developer" class="img-fluid feature-image">
+        </div>
+        <div class="col-md-6">
+          <h2 class="feature-heading">For Developers</h2>
+          <p class="feature-text">Discover innovative ideas, connect with passionate founders, and build your portfolio as a co-founder or tech lead.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="landing-footer text-center mt-5">
+    <p>&copy; 2025 FoundCo. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <h2>Messaging</h2>
+    <div id="messages" class="mb-3"></div>
+    <form id="chatForm">
+      <input type="text" class="form-control mb-2" id="message" placeholder="Type your message">
+      <button type="button" class="btn btn-primary" id="sendBtn">Send</button>
+    </form>
+  </div>
+  <script>
+    const messages = document.getElementById("messages");
+    const sendBtn = document.getElementById("sendBtn");
+  
+    sendBtn.addEventListener("click", () => {
+      const message = document.getElementById("message").value;
+      if (message) {
+        messages.innerHTML += `<p>${message}</p>`;
+        document.getElementById("message").value = "";
+      }
+    });
+  </script>
+

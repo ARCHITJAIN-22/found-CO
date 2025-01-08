@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Founder Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FoundCo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="founder.html">Founders</a></li>
+              <li class="nav-item"><a class="nav-link" href="developer.html">Developers</a></li>
+            </ul>
+            <div class="d-flex">
+              <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+              <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+  <div class="container mt-5">
+    <h2>Submit Your Idea</h2>
+    <form id="founderForm">
+      <div class="mb-3">
+        <label for="ideaTitle" class="form-label">Idea Title</label>
+        <input type="text" class="form-control" id="ideaTitle" required>
+      </div>
+      <div class="mb-3">
+        <label for="ideaDescription" class="form-label">Description</label>
+        <textarea class="form-control" id="ideaDescription" rows="3" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="skillsRequired" class="form-label">Required Skills</label>
+        <input type="text" class="form-control" id="skillsRequired" required>
+      </div>
+      <div class="mb-3">
+        <label for="equity" class="form-label">Equity/Compensation</label>
+        <input type="text" class="form-control" id="equity" required>
+      </div>
+      <button type="button" class="btn btn-success" id="submitIdea">Submit</button>
+    </form>
+    <h3 class="mt-5">Submitted Ideas</h3>
+    <div id="ideaList"></div>
+  </div>
+  <script src="js/founder.js"></script>
+</body>
+</html>
+
